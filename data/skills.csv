@@ -1,0 +1,27 @@
+category, skill
+Analytical, Dynamic modelling
+Analytical, statistical modelling
+Analytical, data science
+Analytical, reproducible research
+Programming, R (advanced),
+Programming, C/C++,
+Programming, STAN,
+Programming, JAGS,
+Programming, LIBBI,
+Programming, Python,
+Programming, Matlab
+Packages, shiny, 
+Packages, tidyverse,
+Packages, data.table
+Packages, Rcpp,
+Packages, h2o
+Packages,brms
+Packages, etc.
+Tools, Git, 
+Tools, Docker,
+Tools, Travis,
+Tools, AWS
+
+
+
+
