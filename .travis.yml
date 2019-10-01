@@ -32,7 +32,7 @@ language: r
 sudo: false
 dist: xenial
 cache: packages
-latex: true
+latex: false
 
 #env
 env:
