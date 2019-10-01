@@ -72,7 +72,6 @@ service <- read_csv(here::here("data", "service.csv"))
 ```
 
 # Education 
-
 ```{r}
 detailed_entries(edu, 
                  when = glue("{start_date}--{end_date}"),
@@ -97,14 +96,12 @@ jobs %>%
     .protect = FALSE
   )
 ```
-
 # Skills
 
 ```{r}
 skills %>% 
   detailed_entries(what = skill, with = category)
 ```
-
 \pagebreak
 
 # Training
@@ -113,24 +110,12 @@ skills %>%
 training %>% 
   detailed_entries(what = what, with = with, when = when, where = where, why = why)
 ```
-
-
 # Teaching
 
 ```{r}
 teaching %>% 
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
-
-
-# Service
-
-
-```{r}
-service %>% 
-  detailed_entries(with = type, why = details)
-```
-
 
 # Publications
 
@@ -173,7 +158,9 @@ pubs %>%
   )
 ```
 
-*This list is updated programmatically each week. See [my Google Scholar](https://scholar.google.com/citations?user=GqZm90IAAAAJ&hl=en) for DOIs and citation details.*
+*Updated programmatically each week. See [here](https://scholar.google.com/citations?user=GqZm90IAAAAJ&hl=en) for DOIs and citation details.*
+
+\pagebreak
 
 # Selected Software
 
@@ -207,3 +194,9 @@ presentations %>%
                    .protect = TRUE)
 ```
 
+# Service
+
+```{r}
+service %>% 
+  detailed_entries(with = type, why = details, .protect = TRUE)
+```

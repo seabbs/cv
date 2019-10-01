@@ -14,9 +14,9 @@ Packages, shiny,
 Packages, tidyverse,
 Packages, data.table
 Packages, Rcpp,
+Packages, pomp,
 Packages, h2o
-Packages,brms
-Packages, etc.
+Packages, brms
 Tools, Git, 
 Tools, Docker,
 Tools, Travis,
