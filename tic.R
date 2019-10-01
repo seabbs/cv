@@ -5,9 +5,8 @@ get_stage("before_install") %>%
 get_stage("install") %>%
   add_code_step(install.packages("here")) %>% 
   add_code_step(source(here::here("scripts", "install.R"))) %>% 
-  add_code_step(tinytex::install_tinytex()) %>% 
+  add_code_step(tinytex::install_tinytex())
   ## Based on: https://github.com/PHPirates/travis-ci-latex-pdf/tree/master/5-tinytex
-  add_code_step(tinytex::pdflatex("src/main.tex", bib_engine = "biber"))
 
 if (ci_on_travis()) {
   get_stage("deploy") %>%
