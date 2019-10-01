@@ -9,7 +9,7 @@ twitter: seabbs
 github: seabbs
 aboutme: "Dynamic modeller and data scientist focussing on infectious disease dynamics, epidemiology, and control. I have a strong interest in reproducibility and tool development, having developed multiple widely used packages and dashboards. My work lies at the interface between dynamic modelling, statistical modelling and data science - incorporating elements from software development to enhance robustness and longevity."
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: 000000
+headcolor: "000000"
 output: vitae::awesomecv
 latex_engine: xelatex
 ---
