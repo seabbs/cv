@@ -1,4 +1,4 @@
-## Run tic::use_tic
+## Run tic::use_tic() to link GitHub and Travis (keeping this tic.R as is)
 get_stage("before_install") %>%
   add_code_step(update.packages(ask = FALSE))
 
