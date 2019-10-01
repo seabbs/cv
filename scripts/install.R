@@ -3,6 +3,7 @@
 # R packages --------------------------------------------------------------
 if (!require(pacman)) install.packages("pacman"); library(pacman)
 
+p_load_gh("ropenscilabs/tic")
 p_load(tinytex)
 p_load(scholar)
 p_load(vitae)
