@@ -6,7 +6,6 @@ get_stage("install") %>%
   add_code_step(install.packages("here")) %>% 
   add_code_step(source(here::here("scripts", "install.R"))) %>% 
   add_code_step(tinytex::install_tinytex())
-  ## Based on: https://github.com/PHPirates/travis-ci-latex-pdf/tree/master/5-tinytex
 
 if (ci_on_travis()) {
   get_stage("deploy") %>%

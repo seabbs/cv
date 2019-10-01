@@ -11,7 +11,6 @@ aboutme: "Dynamic modeller and data scientist focussing on infectious disease dy
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "000000"
 output: vitae::awesomecv
-latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
@@ -79,8 +78,7 @@ detailed_entries(edu,
                  what = degree,
                  where = loc,
                  with = uni,
-                 why = details,
-                 .protect = TRUE)
+                 why = details)
 
 ```
 
@@ -93,15 +91,13 @@ jobs %>%
     when = glue("{start_date}--{end_date}"),
     with = company,
     where = where,
-    why = details,
-    .protect = TRUE
-  )
+    why = details)
 ```
 # Skills
 
 ```{r}
 skills %>% 
-  detailed_entries(what = skill, with = category, .protect = TRUE)
+  detailed_entries(what = skill, with = category)
 ```
 \pagebreak
 
@@ -109,13 +105,13 @@ skills %>%
 
 ```{r}
 training %>% 
-  detailed_entries(what = what, with = with, when = when, where = where, why = why, .protect = TRUE)
+  detailed_entries(what = what, with = with, when = when, where = where, why = why)
 ```
 # Teaching
 
 ```{r}
 teaching %>% 
-  detailed_entries(what = what, when = when, with = with, where = where, why = why, .protect = TRUE)
+  detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
 # Publications
@@ -172,7 +168,7 @@ pubs %>%
 
 ```{r}
 software %>% 
-  detailed_entries(what = what, with = package, when = when, where = where, why = why, .protect = TRUE)
+  detailed_entries(what = what, with = package, when = when, where = where, why = why)
 ```
 
 **Interactive tools**
@@ -181,7 +177,7 @@ software %>%
 dashboards %>% 
   dplyr::mutate(with = what, 
                 what = why) %>% 
-  detailed_entries(what = what, with = with, when = when, where = where, .protect = TRUE)
+  detailed_entries(what = what, with = with, when = when, where = where)
 ```
 
 *See [my GitHub](https://github.com/seabbs/) for a complete overview of my software both released and in development.*
@@ -202,5 +198,5 @@ presentations %>%
 
 ```{r}
 service %>% 
-  detailed_entries(with = type, why = details, .protect = TRUE)
+  detailed_entries(with = type, why = details)
 ```
