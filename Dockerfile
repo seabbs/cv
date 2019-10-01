@@ -5,6 +5,7 @@ MAINTAINER "Sam Abbott" contact@samabbott.co.uk
 
 ADD . /home/rstudio/cv
 
+WORKDIR /home/rstudio/cv
 ## Install dev deps
 RUN Rscript scripts/install.R
 
