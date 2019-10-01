@@ -79,7 +79,7 @@ detailed_entries(edu,
                  where = loc,
                  with = uni,
                  why = details,
-                 .protect = FALSE)
+                 .protect = TRUE)
 
 ```
 
@@ -93,14 +93,14 @@ jobs %>%
     with = company,
     where = where,
     why = details,
-    .protect = FALSE
+    .protect = TRUE
   )
 ```
 # Skills
 
 ```{r}
 skills %>% 
-  detailed_entries(what = skill, with = category)
+  detailed_entries(what = skill, with = category, .protect = TRUE)
 ```
 \pagebreak
 
@@ -108,13 +108,13 @@ skills %>%
 
 ```{r}
 training %>% 
-  detailed_entries(what = what, with = with, when = when, where = where, why = why)
+  detailed_entries(what = what, with = with, when = when, where = where, why = why, .protect = TRUE)
 ```
 # Teaching
 
 ```{r}
 teaching %>% 
-  detailed_entries(what = what, when = when, with = with, where = where, why = why)
+  detailed_entries(what = what, when = when, with = with, where = where, why = why, .protect = TRUE)
 ```
 
 # Publications
@@ -128,7 +128,8 @@ pubs %>%
     what = title,
     when = year,
     with = author,
-    where = journal
+    where = journal, 
+    .protect = TRUE
   )
 ```
 
@@ -141,7 +142,8 @@ pubs %>%
     what = title,
     when = year,
     with = author,
-    where = journal
+    where = journal,
+    .protect = TRUE
   )
 ```
 
@@ -154,7 +156,8 @@ pubs %>%
     what = title,
     when = year,
     with = author,
-    where = journal
+    where = journal, 
+    .protect = TRUE
   )
 ```
 
@@ -168,7 +171,7 @@ pubs %>%
 
 ```{r}
 software %>% 
-  detailed_entries(what = what, with = package, when = when, where = where, why = why)
+  detailed_entries(what = what, with = package, when = when, where = where, why = why, .protect = TRUE)
 ```
 
 **Interactive tools**
@@ -177,7 +180,7 @@ software %>%
 dashboards %>% 
   dplyr::mutate(with = what, 
                 what = why) %>% 
-  detailed_entries(what = what, with = with, when = when, where = where)
+  detailed_entries(what = what, with = with, when = when, where = where, .protect = TRUE)
 ```
 
 *See [my GitHub](https://github.com/seabbs/) for a complete overview of my software both released and in development.*
