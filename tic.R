@@ -12,7 +12,7 @@ if (ci_on_travis()) {
   get_stage("deploy") %>%
     add_code_step(rmarkdown::render(here::here("cv", "cv.Rmd")))
   
-  if (ci_has_env("id_rsa")) {
+  if (ci_has_env("GITHUB_PAT")) {
     get_stage("before_deploy") %>%
       add_step(step_setup_ssh())
     
