@@ -11,6 +11,7 @@ aboutme: "Dynamic modeller and data scientist focussing on infectious disease dy
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 000000
 output: vitae::awesomecv
+latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
