@@ -12,11 +12,11 @@ if (ci_on_travis()) {
   get_stage("deploy") %>%
     add_code_step(rmarkdown::render(here::here("cv", "cv.Rmd")))
   
-  if (ci_has_env("GITHUB_PAT")) {
+  if (ci_has_env("id_rsa")) {
     get_stage("before_deploy") %>%
       add_step(step_setup_ssh())
     
     get_stage("deploy") %>%
-      add_step(step_push_deploy(path = "cv", branch = "gh-pages"))
+      add_step(step_push_deploy(path = ".", branch = "gh-pages", commit_paths = "cv"))
   }
 }
