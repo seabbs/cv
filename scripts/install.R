@@ -15,4 +15,5 @@ p_load(glue)
 
 # Get latex ---------------------------------------------------------------
 
+## This needs to be run manually if LaTex is not installed locally.
 ##tinytex::install_tinytex()

@@ -18,6 +18,7 @@ Academic CV built using R - updated automatically each week. See [here](https://
 - The [`{vitae}`](https://docs.ropensci.org/vitae/) :package: is used to provide a CV template.
 - [`{tidyverse}`](https://www.tidyverse.org) :tools: are used for data read in and manipulation.
 - [`{here}`](https://here.r-lib.org) :package: for path management.
+- [`{tinytex}`](https://github.com/yihui/tinytex) to manage LaTex installation and additional packages.
 - [Travis CI](https://travis-ci.org) is used for building the CV each week
 - [Docker](https://www.docker.com) and [Docker Hub](https://hub.docker.com) is used to ensure a reproducible environment
 
@@ -27,3 +28,4 @@ Academic CV built using R - updated automatically each week. See [here](https://
 - [ ] Programmatic short/long academic CVs
 - [ ] Non-academic CVs
 - [ ] Improved list structure for the service section
+- [ ] Automatic detection of latex to inform `{tinytex}` LaTex install.
