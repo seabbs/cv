@@ -9,6 +9,7 @@ get_stage("install") %>%
 
 if (ci_on_travis()) {
   get_stage("deploy") %>%
+    add_step(step_setup_push_deploy(path = "cv", branch = "gh-pages")) %>%
     add_code_step(rmarkdown::render(here::here("cv", "cv.Rmd"), output_dir = "."))
   
   if (ci_has_env("id_rsa")) {
@@ -16,6 +17,6 @@ if (ci_on_travis()) {
       add_step(step_setup_ssh())
     
     get_stage("deploy") %>%
-      add_step(step_push_deploy(path = ".", branch = "gh-pages", commit_paths = "cv.pdf"))
+          add_step(step_do_push_deploy(path = "cv"))
   }
 }
