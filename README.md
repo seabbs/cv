@@ -27,7 +27,7 @@ Academic CV built using R - updated automatically from [Google Scholar](https://
 
 ## To do
 
-- [ ] Fix links
+- [x] Fix links
 - [ ] Programmatic short/long academic CVs
 - [ ] Non-academic CVs
 - [ ] Improved list structure for the service section
