@@ -123,7 +123,7 @@ pubs %>%
   dplyr::filter(first_author, !preprint) %>% 
   detailed_entries(
     what = title,
-    when = year,
+    when = as.character(year),
     with = author,
     where = journal, 
     .protect = TRUE
@@ -137,7 +137,7 @@ pubs %>%
   dplyr::filter(!first_author, !preprint) %>% 
   detailed_entries(
     what = title,
-    when = year,
+    when = as.character(year),
     with = author,
     where = journal,
     .protect = TRUE
@@ -151,7 +151,7 @@ pubs %>%
   dplyr::filter(preprint) %>% 
   detailed_entries(
     what = title,
-    when = year,
+    when = as.character(year),
     with = author,
     where = journal, 
     .protect = TRUE
