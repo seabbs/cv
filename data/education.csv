@@ -1,8 +1,4 @@
-degree,uni,loc,start_date,end_date,details
-PhD in Epidemiology,University of Bristol,Bristol,October 2015,September 2019,Modelling BCG vaccination policy in the UK: What is the effect of changing policy?
-PhD in Epidemiology,University of Bristol,Bristol,October 2015,September 2019, "Read here: samabbott.co.uk/thesis/"
-Research Placement,University of Glasgow,Glasgow,June 2015,September 2015,Distinction
-Research Placement,University of Glasgow,Glasgow,June 2015,September 2015,The multi-species ecology of antimicrobial resistance in tanzanian human and livestock populations: Using Bayesian methods to infer genetic resistance patterns from phenotypic data.
-Msc Advanced Mathematical Biology,University of York,York,2014,2015,Distinction
-Msc Advanced Mathematical Biology,University of York,York,2014,2015,"Group project: Modelling superspreading and seasonality in Influenza, Distinction. An analysis of the resonant effects produced by the introduction of population heterogeneity and seasonal variation to an SIRS model."
-MMath Mathematics,University of Durham,Durham,2010,2014,2:1
+degree,uni,start_date,end_date,
+PhD in Epidemiology,University of Bristol, 2015,2019,
+Msc Advanced Mathematical Biology,University of York,2014,2015
+MMath Mathematics,University of Durham,2010,2014

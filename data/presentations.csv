@@ -8,3 +8,5 @@ what,when,with,where,why, type, loc, invited
 "(My) essential R resources", 2019, "BristolR", Bristol, "Slides: samabbott.co.uk/talk/myessentialr-bristolr_19_04_20/", talk, national, yes
 "What do we really know about BCG?", 2019, "UK Clinical Vaccine Network Conference", "Oxford", "Slides:  samabbott.co.uk/talk/uk-vac-network-2019/", talk, national, no
 "getTBinR: an R package for accessing and summarising World Health Organization Tuberculosis data", 2019, "R/Medicine", "Boston", "Slides:  samabbott.co.uk/talk/gettbinr-14-09-19/", talk, international, no
+"EpiNow2: Estimate real-time case counts and time-varying epidemiological parameters.", 2021, ECDC Forecasting Hub Seminar Series, "Virtual", talk, international, yes
+"Real-time analysis case studies", 2022, How can governments plan for the next pandemic? LSHTM Centre for Epidemic Prepardness and Response Symposium, London, , talk, national, yes

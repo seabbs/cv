@@ -1,6 +1,0 @@
-what,when,with,where,why
-The pebble game, 2016, S Abbott, "github.com/seabbs/thepebblegame", "Developed as a learning aid to help a general audience understand the impact of vaccination on infectious disease dynamics. Used at Green Man 2016 as part of a week of outreach work and subsequently developed further."
-Introduction to Tuberculosis models, 2017, S Abbott, "github.com/seabbs/intro_to_tb_models",  "Developed to allow simple TB models to be explored in an interactive session. Inspired by practicals from the introduction to TB course, run by TB MAC at the 2017 Union conference."
-Explore global tuberculosis, 2018, S Abbott, "getTBinR::run_tb_dashboard()", "Built into getTBinR this dashboard allows non-R users to explore WHO TB data using all of the package functionality."
-Explore infectious disease models, 2019, S Abbott, "github.com/seabbs/exploreidmodels", "Developed to be used within a modelling short course at the University of Bristol. This dashboard allows the user to simulate and compare a variety of compartmental infectious disease models."
-

@@ -1,7 +1,6 @@
-package,what,when,with,where,why, release
-"prettypublisher", "An R package that aims to improve your workflow by allowing an easier transition from literate code to a paper draft ready for journal submission", 2017, S Abbott, samabbott.co.uk/prettypublisher, Author and maintainer, GitHub
-"getTBinR", "Access and summarise World Health Organisation tuberculosis data",2018,S Abbott,samabbott.co.uk/getTBinR,Author and maintainer, CRAN
-"getTBinR", "Access and summarise World Health Organisation tuberculosis data",2018,S Abbott,samabbott.co.uk/getTBinR,Released to CRAN with 11k+ downloads, CRAN
-"idmodelr", "Infectious disease model library and utilities",2019,S Abbott,samabbott.co.uk/idmodelr,Author and maintainer, CRAN
-"idmodelr", "Infectious disease model library and utilities",2019,S Abbott,samabbott.co.uk/idmodelr,Released to CRAN with 1k+ downloads, CRAN
-"EstZoonoticTB", "An R package for exploring, visualising and estimating the global zoonotic tuberculosis burden", 2019, S Abbott, samabbott.co.uk/EstZoonoticTB, Author and maintainer, GitHub
+package,what,when, where
+EpiNow2, Estimate real-time case counts and time-varying epidemiological parameters, 2020, epiforecasts.io/EpiNow2
+covidregionaldata, Subnational data for the COVID-19 outbreak, 2021, epiforecasts.io/covidregionaldata
+epinowcast, Hierarchical nowcasting of right censored epidemological counts, 2022, epiforecasts.io/epinowcast
+scoringutils, Utilities for Scoring and Assessing Predictions, 2023, epiforecasts.io/scoringutils
+forecast.vocs, Forecast case and sequence notifications using variant of concern strain dynamics, epiforecasts.io/forecast.vocs
