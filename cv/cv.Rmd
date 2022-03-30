@@ -7,7 +7,7 @@ www: samabbott.co.uk
 email: contact@samabbott.co.uk
 twitter: seabbs
 github: seabbs
-aboutme: "My main research interest lies in developing, evaluating, and applying methods for improving our understanding of infectious disease dynamics in real-time. I am committed to doing science in the open, and collaboratively, with the aim of producing useful and actionable output."
+aboutme: ""
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "000000"
 output: vitae::awesomecv
@@ -25,19 +25,17 @@ library(lubridate)
 library(glue)
 ```
 
-```{r get data, include=FALSE}
-
-```
 
 # Positions
 
-```{r research}
+```{r}
 jobs <- vroom(here::here("data", "jobs.csv"))
 
 jobs |>
+  arrange(desc(dates)) |> 
   detailed_entries(
     what = glue("{role} - {company}"),
-    when = glue("{start_date}--{end_date}")
+    when = dates
 )
 ```
 
@@ -68,17 +66,12 @@ skills |>
 
 # Selected publications
 
-```{r, eval = FALSE}
-pubs <- vroom(here::here("data", "publications.csv")) |>
-  arrange(desc(when))
+```{r}
+pubs <- vroom(here::here("data", "publications.csv"), delim = "\t")
 
 pubs |>
   detailed_entries(
-    what = title,
-    when = as.character(year),
-    with = author,
-    where = journal,
-    .protect = TRUE
+    what = publication
 )
 ```
 
@@ -92,14 +85,23 @@ software <- vroom(here::here("data", "software.csv")) |>
 
 software |>
   detailed_entries(
-    what = what, with = package, when = when, where = where
+    what = glue("{package} - {what}"), when = where
 )
 ```
 
-*Software that I have primarily developed has had over 30k downloads and been used in multiple public health organisations such as the WHO and the ECDC. Software that I have managed the development of has had over 20k downloads. See [my GitHub](https://github.com/seabbs/) for more on my software output.*
+*Software that I have primarily developed has had over 30k downloads and been used/is used in multiple public health organisations such as the WHO and the ECDC. Software that I have managed the development of has had over 20k downloads. See [my GitHub](https://github.com/seabbs/) for more on my software output.*
 
 # Research (Co-) Supervision
 
+```{r research}
+supervision <- vroom(here::here("data", "supervision.csv"))
+
+supervision |>
+  detailed_entries(
+    what = glue("{who} - {what}"),
+    when = when
+)
+```
 # Teaching
 
 ```{r}
@@ -108,24 +110,24 @@ teaching <- vroom(here::here("data", "teaching.csv")) |>
 
 teaching |>
   detailed_entries(
-    what = what, when = when, with = with, where = where, why = why
+    what = what, when = when
 )
 ```
 
 
-# Presentations
+# Selected presentations
 
 ```{r}
 presentations <- vroom(here::here("data", "presentations.csv")) |>
   arrange(desc(when))
 
 presentations |>
-  detailed_entries(what = with,
-                   when = when
+  detailed_entries(
+    what = with, when = when
 )
 ```
 
-*See the details, slides, and recordings of my presentations [here](https://samabbott.co.uk/talks.html)*
+*See the details, slides, and recordings of all my presentations [here](https://samabbott.co.uk/talks.html)*
 
 # Service
 
@@ -133,5 +135,5 @@ presentations |>
 service <- vroom(here::here("data", "service.csv"))
 
 service |>
-  detailed_entries(with = type, why = details)
+  detailed_entries(what = glue("{type} - {details}"), when = when)
 ```

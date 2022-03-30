@@ -1,8 +1,8 @@
-role, company, start_date,end_date
-Research Placement,University of Glasgow,2015, 2015,
-Data Scientist, Funding Circle, 2017, 2019
-Research Assistant, University of Bristol, 2019, 2019
-Research Fellow, London School of Hygiene and Tropical Medicine, 2020, -
-Research Associate, South Africa Centre of Excellence in Epidemiological Modelling and Analysis, 2021, -
+role, company, dates
+Research Placement,University of Glasgow,2015 
+Data Scientist, Funding Circle, 2017-2019
+Research Assistant, University of Bristol, 2019
+Research Fellow, London School of Hygiene and Tropical Medicine, 2020-
+Research Associate, South Africa Centre of Excellence in Epidemiological Modelling and Analysis, 2021-
 
 

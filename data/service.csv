@@ -1,9 +1,8 @@
-type, details
-Outreach, "Blog - with over 2.5k unique hits each year - looking at infectious disease epidemiology and dynamics, developments in `R`, tool development and reproducible research. Link: samabbott.co.uk/post"
-Organisations, Co-organiser of BristolR
-Manuscript Reviews, Journal of Open Source Software (2)
-Manuscript Reviews, Eurosurveillance (1)
-
-
+type , details , when
+SACEMA, Providing support as part of the Omicron response, 2021-
+Germany Nowcasting hub, Daily nowcasts of hospital admissions by date of postive test. Part of an international collaboration to provide improved estimates in real-time., 2021-
+ECDC Forecasting hub, Weekly short-term COVID-19 forecasts of cases and admissions, 2021-
+CDC Forecasting hub, Weekly short-term COVID-19 forecasts of deaths, 2020-2022
+SPI-M/SAGE, Provided weekly estimates of the reproduction number; short-term forecasts; projections; and multiple ad-hoc reports, 2020-2022
 
 
