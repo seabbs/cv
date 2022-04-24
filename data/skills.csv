@@ -1,28 +1,22 @@
 category, skill
-Analytical, "Dynamic modelling"
+Analytical, "Mathematical modelling"
 Analytical, "statistical modelling"
-Analytical, "data science"
+Analytical, "Bayesian statistics"
 Analytical, "reproducible research"
+Analytical, "Software development"
 Programming, "R (advanced)"
+Programming, "Stan (advanced)"
+Programming, "Python"
+Programming, "Julia"
+Programming, "Turing.jl"
 Programming, "C/C++"
 Programming, Bash
 Programming, SQL
-Programming, STAN
-Programming, JAGS
-Programming, LIBBI
-Programming, Python
-Programming, Matlab
-Packages, shiny
-Packages, tidyverse
-Packages, "data.table"
-Packages, Rcpp
-Packages, pomp
-Packages, h2o
-Packages, brms
-Tools, Git
-Tools, Docker
-Tools, Travis
-Tools, AWS
+Programming, Git
+Programming, Docker
+Programming, AWS
+Programming, GCS
+Programming, Azure
 
 
 
